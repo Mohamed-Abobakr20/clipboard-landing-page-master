@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: var(--Dark-Grayish-Blue);
+}
+
+:root {
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
+    font-weight: 400;
+}
+
+p {
+    color: var(--Grayish-Blue);
+    line-height: 1.5;
+}
+
+
+/*header*/
+
+header {
+    background-image: url('/images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    padding: 7rem 0;
+}
+
+header .logo {
+    width: 6rem;
+}
+
+header h1 {
+    margin: 2.2rem 0 0 0;
+    font-size: 2.2rem;
+}
+
+header p {
+    margin: .8rem auto 1.5rem auto;
+    width: 45%;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: .6rem 1.5rem;
+    margin: .5rem;
+    color: white;
+    border-radius: 1.6rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:first-child {
+    background-color: var(--Strong-Cyan);
+}
+
+button:last-child {
+    background-color: var(--Light-Blue);
+}
+
+
+/*main*/
+
+
+/*snippets*/
+
+main p {
+    width: 48%;
+    margin: 1rem auto 5rem auto;
+}
+
+.snippets .container {
+    display: flex;
+    text-align: left;
+}
+
+.snippets .container .text {
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+.snippets .container p {
+    margin: .8rem 0 0 0;
+    width: 60%;
+}
+
+
+/*access*/
+
+.access {
+    padding: 7rem 0 3.7rem 0;
+}
+
+.access img {
+    width: 75%;
+    margin: 0 auto;
+}
+
+
+/*workflow*/
+
+.workflow div {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.workflow div article {
+    width: 27%;
+}
+
+.workflow div article:nth-child(2) {
+    margin: 0 1.5rem;
+}
+
+.workflow div article img {
+    margin-bottom: 1.5rem;
+}
+
+.workflow div article p {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+
+/*companies*/
+
+.companies {
+    padding: 7rem 0;
+}
+
+.companies img {
+    display: inline-block;
+    margin: 0 2.5rem;
+}
+
+
+/*clipboard*/
+
+.clipboard {
+    padding-bottom: 7rem;
+}
+
+.clipboard p {
+    margin-bottom: 1.8rem;
+}
+
+
+/*footer*/
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    background-color: rgb(238, 238, 238);
+}
+
+footer .left {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    width: 10%;
+    height: 10%;
+}
+
+footer ul {
+    font-size: 18px;
+    text-align: start;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+
+footer li:hover {
+    cursor: pointer;
+}
+
+footer .right {
+    width: 30%;
+}
+
+footer .right img {
+    width: 30px;
+    margin: 0 1rem;
+}
+
+@media only screen and (max-width: 375px) {
+    /*header*/
+    header {
+        background-image: url('/images/bg-header-mobile.png');
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+    header p {
+        margin-top: 1rem;
+        width: 100%;
+    }
+    button {
+        width: 90%;
+        padding: .8rem 1.5rem;
+    }
+    /*main*/
+    /*snippets*/
+    .snippets .container {
+        display: block;
+    }
+    .snippets img {
+        margin: 0 auto;
+        width: 80%;
+    }
+    .snippets p {
+        width: 85%;
+        margin-bottom: 3.5rem;
+    }
+    .snippets .container .text {
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+    .snippets .container .text article {
+        margin-top: 3rem;
+    }
+    .snippets .container p {
+        width: 90%;
+        margin: .8rem auto 0 auto;
+    }
+    /*access*/
+    .access p {
+        width: 90%;
+        margin-bottom: 3.5rem;
+    }
+    /*workflow*/
+    .workflow p {
+        width: 90%
+    }
+    .workflow div {
+        display: block;
+    }
+    .workflow div article {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .workflow div article:nth-child(2) {
+        margin: 2rem auto;
+    }
+    /*companies*/
+    .companies {
+        padding: 3rem 0;
+    }
+    .companies img {
+        display: block;
+        margin: 4rem auto;
+    }
+    /*clipboard*/
+    .clipboard p {
+        width: 90%;
+    }
+    /*footer*/
+    footer {
+        display: block;
+        margin: 0 auto;
+    }
+    footer .left {
+        display: block;
+        width: 100%;
+    }
+    footer img {
+        width: 30%;
+    }
+    footer ul {
+        display: block;
+    }
+    footer ul li {
+        margin: 1.5rem auto;
+        text-align: center;
+    }
+    footer .right {
+        width: 100%;
+        margin-top: 2rem;
+        display: flex;
+    }
+}
